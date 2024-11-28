@@ -5,6 +5,9 @@ export default function AddHabitForm({ onAddHabit }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (habitName.trim() === "") {
+      return;
+    }
     onAddHabit(habitName);
     setHabitName("");
   };
