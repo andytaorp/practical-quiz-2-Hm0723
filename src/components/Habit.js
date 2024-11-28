@@ -15,7 +15,7 @@ export default function Habit({ habit, onToggleHabit, onDeleteHabit }) {
           checked={habit.completed}
           onChange={() => onToggleHabit(habit.id)}
         />
-        <button onClick={() => onDeleteHabit(habit.id)}>Remove</button>
+        <button onClick={() => onDeleteHabit(habit.id)}>Delete</button>
       </li>
     );
   }
